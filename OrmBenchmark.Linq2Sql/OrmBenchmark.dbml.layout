@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ordesignerObjectsDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 11, 8.5" name="OrmBenchmark">
+  <DataContextMoniker Name="/OrmBenchmarkDataContext" />
+  <nestedChildShapes>
+    <classShape Id="365f7d92-8f95-4f1f-b71a-07cc79508b79" absoluteBounds="1.75, 2.125, 2, 3.2004520670572916">
+      <DataClassMoniker Name="/OrmBenchmarkDataContext/Posts" />
+      <nestedChildShapes>
+        <elementListCompartment Id="41868597-bc6c-4216-a913-f8d3e99ed772" absoluteBounds="1.7650000000000001, 2.585, 1.9700000000000002, 2.6404520670572915" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+  </nestedChildShapes>
+</ordesignerObjectsDiagram>

@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Data.Common;
 using System.Data.Entity;
 using System.Data.Entity.Core.EntityClient;
+using System.Data.SqlClient;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -12,11 +13,12 @@ namespace OrmBenchmark.EntityFramework
     class OrmBenchmarkContext : DbContext
     {
         public OrmBenchmarkContext(string connectionStrong) 
-            //: base(GetSqlConnection(connectionStrong), true)
-            : base("name=sqlServerLocal")
+            : base(new SqlConnection(connectionStrong), true)
+            //: base("name=sqlServerLocal")
         {
-            
-
+            this.Configuration.AutoDetectChangesEnabled = false;
+            this.Configuration.LazyLoadingEnabled = false;
+            this.Configuration.ProxyCreationEnabled = false;
         }
 
         public DbSet<Post> Posts { get; set; }
